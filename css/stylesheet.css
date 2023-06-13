@@ -1,0 +1,147 @@
+/* GENERAL */
+
+:root{
+    --primary-color: rgb(149, 147, 230);
+    --secondary-color: rgb(0, 132, 253);
+    --secondary-color-light: rgb(181, 221, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    padding: 3rem 2rem;
+}
+
+h2{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+p{
+    line-height: 2rem;
+    margin-bottom: 1.75rem;
+}
+
+.button{
+    border-radius: 20px;
+    padding: 10px 35px;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+/* ----- HEADER ----- */
+
+header{
+}
+
+/* NAVIGATION BAR */
+.nav-section{
+    background-color: var(--secondary-color);
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar{
+    padding: 5px;
+    margin: 0rem 1rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 1.75rem;
+}
+
+.nav-bar img{
+    height: 100%;
+}
+
+.nav-bar img:hover{
+    cursor: pointer;
+}
+
+.nav-bar i:hover{
+    cursor: pointer;
+}
+
+.nav-bar i:hover .menu{
+    visibility: visible;
+    height: 300px;
+    display: block;
+    transition: 0.5s;
+}
+
+/* MENU*/
+.menu{
+    visibility: hidden;
+    height: 0px;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    pad: 2rem 4rem;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+/* FEATURES SECTION*/
+
+.features i{
+    color: var(--secondary-color);
+}
+
+.features .container{
+    flex-flow: row wrap;
+    gap: 2rem;
+}
+
+.features .card{
+    background-color: var(--secondary-color-light);
+    border-radius: 20px;
+    padding: 2rem 2rem 0rem 2rem;
+}
+
+.features h2{
+    color: var(--secondary-color);
+}
+
+.features p{
+    font-weight: bold;
+    color: rgb(55, 68, 79);
+}
+
+.features .button{
+    background-color: var(--secondary-color);
+    color: white;
+    letter-spacing: 2px;
+    width: fit-content;
+}
+
+.features i{
+    color: white;
+}
+
+.features span{
+    font-weight: bold;
+}
+
+.features img{
+    width: 100%;
+    margin: 2rem 0rem -4px;
+}
+
+/* MEDIA QUERIES */

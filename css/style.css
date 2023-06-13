@@ -1,0 +1,33 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+/* HEADER */
+
+header{
+}
+
+.nav-section{
+    background-color: rgb(0, 132, 253);
+    height: 50px;
+}
+
+.nav-bar{
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.nav-bar img{
+    height: 100%;
+}
+
+
+/* MEDIA QUERIES */
