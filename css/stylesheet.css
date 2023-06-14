@@ -113,6 +113,7 @@ header{
 
 .features .container{
     flex-flow: row wrap;
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -241,20 +242,171 @@ header{
 }
 
 .partners img{
-    width: 60%;
+    width: 150px;
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 50%;
     margin: 1rem;
 }
 
+.partners .card > div{
+    justify-content: center;
+}
+
+/* BENEFITS SECTION */ 
+
+.benefits{
+    background-color: var(--primary-color);
+}
+
+.benefits h2{
+    color: white;
+}
+
+.benefits-box{
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.benefits-box .card{
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 50px;
+    color: rgb(115, 115, 115);
+}
+
+.benefits > h2{
+    font-size: 2.25rem;
+}
+
+.benefits-box h2{
+    font-size: 3rem;
+}
+
+.benefits-box .card h2 , .benefits-box .card h3{
+    text-align: left;
+    color: var(--primary-color);
+}
+
+.benefits-box .button{
+    background-color: var(--primary-color);
+    width: fit-content;
+    color: white;
+}
+
+/* ABOUT US SECTION */
+
+.abt-us{
+    flex-flow: row wrap;
+}
+
+.abt-us-left h2{
+    color: var(--primary-color);
+    font-size: 3rem;
+    text-align: left;
+}
+
+.img-container{
+    position: relative;
+    width: fit-content;
+}
+
+.img-container img{
+    width: 150px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+.img-container i{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+.abt-us-right h2{
+    text-align: left;
+    color: var(--primary-color);
+}
+
+.abt-us-right .button{
+    background-color: var(--primary-color);
+    width: fit-content;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.abt-us-right .button i{
+    padding: 0;
+    margin-right: 0.5rem;
+}
+
+/* GET STARTED SECTION*/
+
+.get-started{
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+.get-started h3{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.get-started h2{
+    font-size: 1.75rem;
+}
+
+#free{
+    color: rgb(253, 193, 95);
+    font-size: 3.5rem;
+}
+
+.get-started .button{
+    background-color: white;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    width: fit-content;
+    font-weight: bold;
+    letter-spacing: 0.125rem;
+    padding: 1.5rem 4rem;
+    border-radius: 40px;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.get-started a{
+    text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    font-weight: bold;
+}
+
+footer .container{
+    height: 300px;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+footer span{
+    padding-bottom: 0;
+}
 /* MEDIA QUERIES */
 
 /* TABLET */
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .container{
         padding: 2rem 1rem;
-        gap: 0rem;
     }
 
     .first-card{
@@ -288,5 +440,58 @@ header{
     .card-centered i{
         font-size: 3rem;
         margin-bottom: 1rem;
+    }
+
+    .partners .card{
+        padding: 2rem 2rem 2rem 0rem;
+    }
+
+    .partners .card, .card p, .card h3{
+        flex-flow: row;
+        text-align: left;
+    }
+
+    .partners img{
+        width: 80%;
+    }
+
+    .left-tall h2{
+        text-align: left;
+        font-size: 3rem;
+    }
+
+    .right-short h3, .right-short p{
+        text-align: center;
+    }
+
+    .benefits-box{
+        flex-flow: row wrap;
+        gap: 2rem;
+        justify-items: center;
+    }
+
+    .benefits-box .card{
+        width: calc((100% / 2) - 2rem);
+        border-radius: 15px;
+        margin-bottom: 0;
+    }
+
+    .benefits-box .card p{
+        font-size: 0.75rem;
+        line-height: 1.5rem;
+    }
+
+    .abt-us{
+        padding: 3rem;
+        flex-flow: row;
+        gap: 2rem;
+    }
+
+    .abt-us{
+        font-size: 0.75rem;
+    }
+
+    footer .container{
+        height: 200px;
     }
 }
