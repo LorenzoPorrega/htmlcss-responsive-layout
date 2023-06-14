@@ -404,7 +404,7 @@ footer span{
 /* MEDIA QUERIES */
 
 /* TABLET */
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 992px) {
     .container{
         padding: 2rem 1rem;
     }
@@ -493,5 +493,119 @@ footer span{
 
     footer .container{
         height: 200px;
+    }
+}
+
+@media screen and (min-width: 993px){
+    .nav-bar{
+        width: 100%;
+        padding-left: 15%; 
+        padding-right: 15%;
+        margin: 0;
+    }
+
+    .container{
+        width: 100%;
+        padding-left: 15%; 
+        padding-right: 15%;
+    }
+
+    .first-card{
+        width: calc(((100% / 3) * 2) - 1rem);
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    .top-demo{
+        width: calc(100% / 2);
+    }
+
+    .top-demo h2{
+        text-align: left;
+    }
+
+    .bottom-demo{
+        width: calc(100% / 2);
+        position: relative;
+    }
+
+    .bottom-demo img{
+        position: absolute;
+        bottom: 0;
+        align-self: flex-end;
+        max-height: 100%;
+    }
+
+    .card-centered{
+        width: calc((100% / 3) - 1.5rem);
+    }
+
+    .strategic{
+        flex-flow: row;
+        gap: 5rem;
+        padding-left: 20%; 
+        padding-right: 20%;
+    }
+
+    .strategic > div{
+        width: calc(100% / 2);
+    }
+
+    .right-short{
+        height: fit-content;
+        align-self: flex-end;
+    }
+
+    .right-short img{
+        height: 60%;
+        width: 60%;
+    }
+
+    .partners .card{
+        flex-flow: row;
+        align-items: center;
+    }
+
+    .partners .card *{
+        text-align: left;
+    }
+
+    .benefits{
+        flex-flow: row wrap;
+    }
+
+    .benefits-box{
+        gap: 2rem;
+    }
+
+    .benefits-box .card{
+        width: calc((100% / 3) - 2rem);
+    }
+
+    .abt-us{
+        flex-flow: row;
+        gap: 6rem;
+    }
+
+    .img-container img{
+        width: 225px;
+    }
+
+    .img-container i{
+        right: 20px;
+        top: 20px;
+    }
+
+    .get-started , footer{
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .get-started h2{
+        font-size: 2.5rem;
+    }
+
+    #free{
+        font-size: 5rem;
     }
 }
